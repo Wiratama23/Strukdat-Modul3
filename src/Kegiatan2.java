@@ -9,7 +9,7 @@ public class Kegiatan2 {
         int choice;
         do {
             System.out.println("""
-                    Menu Manajemen\s
+                    Menu Manajemen Karyawan\s
                      1. Masukkan Pegawai
                      2. Keluarkan Pegawai
                      3. Pegawai Terakhir
