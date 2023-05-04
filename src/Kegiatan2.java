@@ -20,7 +20,7 @@ public class Kegiatan2 {
                 switch (choice) {
                     case 1 -> {
                         scanner.nextLine();
-                        System.out.print("Masukkan Pegawai: ");
+                        System.out.print("Masukkan Pegawai (Nama , Umur, Status Pegawai): ");
                         data = scanner.nextLine();
                         queue.enqueue(data);
                     }
