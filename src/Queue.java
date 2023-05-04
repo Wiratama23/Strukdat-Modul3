@@ -9,7 +9,7 @@ class Queue {
     public void enqueue(String data) {
         String[] splitData = data.split(",\\s*");
         if (splitData.length != 3) {
-            System.out.println("Format input tidak valid\n\n");
+            System.out.println("Format input tidak valid\n");
             return;
         }
         String name = splitData[0];
@@ -22,12 +22,12 @@ class Queue {
             rear.next = newNode;
             rear = newNode;
         }
-        System.out.println(name + ", " + age + ", " + occupation + " \nberhasil dimasukkan ke database\n\n");
+        System.out.println(name + ", " + age + ", " + occupation + " \nberhasil dimasukkan ke database\n");
     }
 
     public void dequeue() {
         if (front == null) {
-            System.out.println("pegawai kosong\n\n");
+            System.out.println("pegawai kosong\n");
             return;
         }
         String name = front.name;
@@ -37,12 +37,12 @@ class Queue {
         if (front == null) {
             rear = null;
         }
-        System.out.println(name + ", " + age + ", " + occupation + " \nPegawai berhasil dikeluarkan\n\n");
+        System.out.println(name + ", " + age + ", " + occupation + " \nPegawai berhasil dikeluarkan\n");
     }
 
     public Node peek() {
         if (front == null) {
-            System.out.println("Pegawai kosong\n\n");
+            System.out.println("Pegawai kosong\n");
             return null;
         }
         return front;
